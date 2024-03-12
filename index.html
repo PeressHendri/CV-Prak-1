@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Peres Hendri</title>
+
+    <style media="all">
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+            position: absolute;
+            top: 1.7cm;
+            right: 9.6cm;
+            transform: rotate(-90deg);
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+            position: absolute;
+            top: 0.3cm;
+            left: 6.5cm;
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+            top: 2.6cm;
+            left: 6.5cm;
+        }
+
+        h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+        }
+
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+            top: 3.6cm;
+            left: 6.5cm;
+        }
+
+        hr {
+            width: 5cm;
+            height: 1px;
+            position: absolute;
+            top: 2.5cm;
+            left: 6.5cm;
+            background-color: #dbf302;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+            top: 0.9cm;
+        }
+
+        ul {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+            top: 1.07cm;
+            width: 40%;
+        }
+
+        ol {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: absolute;
+            top: 1.07cm;
+            width: 40%;
+        }
+
+        .bg-secondary {
+            background-color: rgb(250, 252, 253);
+        }
+
+        .kolom-a4 {
+            width: 21cm;
+            height: 29.7cm;
+            margin: 50px auto;
+            background-color: #f4f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .kuning-tua {
+            width: 21cm;
+            height: 3cm;
+            background-color: #9a9e23;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .kuning-sdng {
+            width: 12cm;
+            height: 5cm;
+            background-color: #696d33;
+            position: absolute;
+            top: 3cm;
+            right: 0;
+        }
+
+        .kuning-crh {
+            width: 13cm;
+            height: 6cm;
+            background-color: #fffb00;
+            position: absolute;
+            left: 0;
+            top: 1.2cm;
+        }
+
+        .putih {
+            width: 135px;
+            height: 157px;
+            background-color: white;
+            position: absolute;
+            left: 2.6cm;
+            top: 0.9cm;
+            overflow: hidden;
+        }
+
+        .putih img {
+            height: 95%;
+            width: 94%;
+            position: absolute;
+            left: 0.1cm;
+            top: 0.1cm;
+        }
+
+        .biodata {
+            width: 90%;
+            position: absolute;
+            top: 7.1cm;
+            left: 1cm;
+        }
+
+        .biodata hr {
+            top: 4cm;
+            left: 0cm;
+        }
+
+        .i {
+            left: 3.53cm;
+            top: 7.77cm;
+            position: absolute;
+        }
+
+        .prestasi {
+            width: 94%;
+            position: absolute;
+            top: 11.2cm;
+            left: 1cm;
+        }
+
+        .prestasi hr {
+            top: 3.2cm;
+            left: 0cm;
+        }
+
+        .pres {
+            left: 2.5cm;
+            top: 11.85cm;
+            position: absolute;
+        }
+
+        .pengalaman {
+            width: 94%;
+            position: absolute;
+            top: 12.0cm;
+            left: 1cm;
+        }
+
+        .pengalaman hr {
+            top: 5.2cm;
+            left: 1.8cm;
+            width: 15.8cm;
+            transform: rotate(90deg);
+        }
+
+        .pglm {
+            left: 5.30cm;
+            top: 15.25cm;
+            position: absolute;
+        }
+
+        .biografi {
+            width: 90%;
+            position: absolute;
+            top: 11.9cm;
+            left: 11.8cm;
+        }
+
+        .biografi hr {
+            top: 10.0cm;
+            left: 0cm;
+        }
+
+        .bd {
+            left: 14.1cm;
+            top: 11.54cm;
+            position: absolute;
+        }
+
+        .pendidikan {
+            width: 90%;
+            position: absolute;
+            top: 22cm;
+            left: 11.8cm;
+        }
+
+        .pdd {
+            left: 13.95cm;
+            top: 22.27cm;
+            position: absolute;
+        }
+
+        .data {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            position: center;
+            left: 4.5cm;
+            top: 0.2cm;
+            width: 50%;
+            list-style: none;
+            color: #fff;
+        }
+
+        .gambar {
+            position: absolute;
+            left: 4cm;
+            top: 0.2cm;
+            width: 40%;
+            list-style: none;
+        }
+
+        .gambar li {
+            margin-bottom: 15.6px;
+        }
+        
+        a {
+			color: #1100ff;
+		}
+
+        @media print {
+            body {
+                background-color: #ffffff;
+            }
+
+            .kolom-a4 {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <div class="kolom-a4">
+        <div class="kuning-tua">
+        </div>
+
+        <div class="kuning-sdng">
+            <ul class="data">
+                <li><strong>Alamat:</strong> Jalan Brigjend Katamso No.257 </li>
+                <li><strong>No. Ponsel:</strong> +62 851 5945 2235</li>
+                <li><strong>Email:</strong> <a href="peres.gaul@gmail.com">peres.gaul@gmail.com</a></li>
+            </ul>
+        </div>
+
+        <div class="kuning-crh">
+            <hr>
+            <h1>CURRICULUM
+                VITAE
+            </h1>
+            <h2>PERES HENDRI
+                VIRGIAWAN
+            </h2>
+            <h3>Keahlian</h3>
+            <label>Public Speaking, Berdiskusi, dan Memecahkan Suatu Masalah</label>
+            <div class="putih">
+                <img src="bb.jpeg" alt="foto">
+            </div>
+        </div>
+
+        <div class="biodata">
+
+            <h5>Tentang Saya</h5>
+            <p>Biasa dipanggil Peres, mahasiswa aktif angkatan 2022 jurusan Teknologi Informasi Kampus
+                Telkom University Surabaya, yang memiliki ketertarikan di bidang Teknologi.
+                Saya dapat berkerjasama baik dalam lingkungan kampus, maupun luar kampus, serta
+                memiliki kemampuan komunikasi publik dan bekerja sama dalam tim melalui pengalaman organisasi dan
+                kepanitiaan.</p>
+            <hr>
+        </div>
+
+        <div class="pengalaman">
+            <h5>Pengalaman Organisasi</h5>
+            <ul>
+                <li><strong>Ketua Regu Pramuka</strong></li>
+                Melatih anggota agar bisa memahami materi yang ada di pramuka untuk persiapan lomba ataupun tidak.
+                <br>
+                <br>
+                <li><strong>Koordinator Pelayan Musik Gereja</strong></li>
+                Memberi arahan dan jadwal sesuai bakat yang dimiliki.
+                <br>
+                <br>
+                <li><strong>Staff HIMATISI Riset dan Teknologi</strong></li>
+                Menjadi staff HIMATISI di bidang Riset dan Teknologi.
+                <br>
+                <br>
+                <li><strong>Anggota Divisi Komdis Iteration 2023</strong></li>
+                Memberi solusi bagaimana cara terbaik agar menjadi komdis yang patut di contoh.
+                <br>
+                <br>
+                <li><strong>Anggota ATP VacaIT 2024</strong></li>
+                Menyiapkan peralatan apa saja yang dibutuhkan kegiatan tersebut.
+                <br>
+                <hr>
+            </ul>
+        </div>
+
+        <div class="biografi">
+            <h5>Biodata Diri</h5>
+            <ul>
+                <li><strong>Nama Lengkap : </strong> Peres Hendri Virgiawan</li>
+                <br>
+                <li><strong>Nama Panggilan : </strong> Peres</li>
+                <br>
+                <li><strong>Tempat, Tanggal Lahir : </strong> Surabaya, 10 Agustus 2003</li>
+                <br>
+                <li><strong>Jenis Kelamin : </strong> Laki-Laki</li>
+                <br>
+                <li><strong>Agama : </strong> Kristen</li>
+                <br>
+                <li><strong>Hobby : </strong> Mendengarkan Musik, Menonton Film, Memotret Sesuatu yang Unik, dan Ridding</li>
+                <br>
+                <li><strong>Cita-cita : </strong> Cyber Security, IT Support, Software Developer</li>
+                <br>
+                
+            </ul>
+            <hr>
+        </div>
+
+        <div class="pendidikan">
+            <h5>Pendidikan</h5>
+            <ol>
+                <li><strong>SDN Janti I Waru</strong> </li>
+                <br>
+                <li><strong>SMP Negeri 2 Waru</strong> </li>
+                <br>
+                <li><strong>SMK Negeri 3 Buduran </strong></li>
+                <br>
+                <li><strong>Telkom University Surabaya</strong> </li>
+                <br>
+            </ol>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
